@@ -23,7 +23,28 @@ class MemeGenerator extends React.Component{
     render() {
 
         return(
-            <h1>MEME GENERATOR SECTION</h1>
+            <div>
+                <form className="meme-form">
+                    
+                        <input
+                           type="text" 
+                           name="topText" 
+                           value={this.state.topText} 
+                           placeholder="Top Text"
+                           onChange={}
+                        />
+               
+                    <input
+                           type="text" 
+                           name="bottomText" 
+                           value={this.state.bottomText} 
+                           placeholder="Bottom Text"
+                           onChange={}
+                        />
+                      
+                    <button>Generate</button>
+                </form>
+            </div>
         )
     }
 }
